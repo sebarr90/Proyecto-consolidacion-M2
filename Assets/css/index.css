@@ -1,23 +1,16 @@
-
-
-
-.card{
+.card {
     width: auto;
     display: inline-block;
     transition: 0.2ms ease-in-out;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.1);
 
 }
 
 
 
-/*
-
-    Pantalla Extra Large (>=1200px) 
-
-*/
 @media(min-width:1200px) {
 
     .col-xl-12 {
@@ -70,11 +63,6 @@
 
 }
 
-/* 
-
-    Pantalla Large (>=992px) 
-
-*/
 
 @media(min-width:992px) and (max-width:1199px) {
 
@@ -128,11 +116,6 @@
 
 }
 
-/* 
-
-   Pantalla Medium (>=768px) 
-
-*/
 
 @media(min-width:768px) and (max-width:991px) {
 
@@ -186,11 +169,6 @@
 
 }
 
-/* 
-
-    Pantalla LSmall (>=576px) 
-
-*/
 
 @media(min-width:576px) and (max-width:767px) {
 
@@ -244,11 +222,6 @@
 
 }
 
-/* 
-
-    Pantalla Extra small (<576px) 
-
-*/
 
 @media(max-width:575px) {
 
