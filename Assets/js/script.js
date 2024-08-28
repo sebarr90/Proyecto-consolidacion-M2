@@ -1,6 +1,7 @@
 function mostrarform() {
     document.getElementById('formu') .style.display = "block";
 }
+
 $(document).ready(function () {
     $("#aerovia").click(function () {
         $("#detallesaerovia").toggle();

@@ -1,5 +1,12 @@
-#proyectos{
+section{
     padding: 20px;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 
 .card {
@@ -14,6 +21,15 @@
     left: 10%;
 }
 
+.img {
+    width: 200%;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
 #detallesaerovia {
     display: none;
 }
@@ -26,24 +42,8 @@
     display: none
 }
 
-.img {
-    width: 200%;
-}
-
-section{
+#proyectos{
     padding: 20px;
-}
-
-footer{
-    color: white;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.icon{
-    width: 30px;
-    height: 30px;
 }
 
 #formu {
