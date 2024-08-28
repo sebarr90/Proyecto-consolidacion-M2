@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="Assets/img/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                    <img src="Assets/img/logo.png" alt="Logo" width="50" height="50"
                         class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,7 +37,8 @@
                             <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">¡Contáctame!</a>
+                            <a class="nav-link" id="contactame" aria-current="page"
+                                onclick="mostrarform()">¡Contáctame!</a>
                         </li>
                     </ul>
                 </div>
@@ -52,6 +53,7 @@
                 intuitivas y atractivas. Me encanta aprender nuevas tecnologías y aplicarlas a proyectos desafiantes. Mi
                 objetivo es contribuir a la creación de productos digitales que brinden una excelente experiencia al
                 usuario.
+
             </p>
         </section>
         <section class="text-start text-white" id="habilidades">
@@ -65,6 +67,16 @@
                 <li>Herramientas: Webpack, npm, yarn</li>
                 <li>Otros: Responsive design, accesibilidad</li>
             </ul>
+            <h3>¿Por qué elegirme?</h3>
+            <p>
+
+                Aprendizaje rápido: Soy un aprendiz rápido y me adapto fácilmente a nuevas tecnologías y entornos de
+                trabajo.
+                Trabajo en equipo: Me gusta colaborar con otros desarrolladores y diseñadores para lograr objetivos
+                comunes.
+                Pasión por la tecnología: Estoy constantemente buscando nuevas formas de mejorar mis habilidades y crear
+                productos innovadores.
+            </p>
         </section>
         <section class="text-start text-white" id="proyectos">
             <h3 class="text-start">Proyectos</h3>
@@ -117,7 +129,8 @@
                         <div class="col-md-6">
                             <div class="card-body">
                                 <h5 class="card-title">Aerovia</h5>
-                                <p class="card-text">Desarrollé una pagina web de la aerolinea aerovia utilizando Bootstrap y su
+                                <p class="card-text">Desarrollé una pagina web de la aerolinea aerovia utilizando
+                                    Bootstrap y su
                                     ecosistema. La aplicación permite a los
                                     usuarios ver destinos, buscar pasajes y comprarlos. Implementé un diseño
                                     responsivo y una experiencia
@@ -134,7 +147,7 @@
                     <button type="button" class="btn-close" aria-label="Close"></button>
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <img src="Assets/img/webleonardo.png" class="img-fluid rounded-start" alt="leonardo">
+                            <img src="Assets/img/webleonardo.png" class="img img-fluid rounded-start" alt="leonardo">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -176,7 +189,59 @@
                 </div>
             </div>
         </section>
-        <footer>@MarcosArriagada 2024</footer>
+
+        <div id="formu">
+            <form method="get" action="#" class="col needs-validation" novalidate>
+                <p>Estoy buscando oportunidades para unirme a un equipo dinámico y contribuir a proyectos emocionantes.
+                    <br> ¡No
+                    dudes en contactarme para discutir cómo puedo agregar valor a tu equipo!</p>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <label for="validationCustom03" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Ingrese un numero valido.
+                    </div>
+                    <label for="validationCustomUsername" class="form-label">email</label>
+                    <div class="input-group has-validation">
+                        <input type="email" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 col-md-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepto los terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                            Debe aceptar antes de enviar.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <a href="https://github.com/sebarr90" target="_blank"><img class="icon" src="Assets/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="Assets/img/ig.png" alt=""></a>
+            <a href="https://cl.linkedin.com/" target="_blank"><img class="icon" src="Assets/img/linkedin.png" alt=""></a>
+            <p>@MarcosArriagada 2024</p>
+        </footer>
     </main>
 
 
