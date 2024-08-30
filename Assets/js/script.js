@@ -1,5 +1,5 @@
 function mostrarform() {
-    document.getElementById('formu') .style.display = "block";
+    document.getElementById('form') .style.display = "block";
 }
 
 $(document).ready(function () {
@@ -23,8 +23,8 @@ $(document).ready(function () {
     $(".btn-close").click(function () {
         $("#detallesbanco").hide();
     });
-    $(".btn-primary") .click(function(){
-        $("#formu").hide();
-    })
+    $(".btn-close").click(function () {
+        $("#form").hide();
+    });
 })
 

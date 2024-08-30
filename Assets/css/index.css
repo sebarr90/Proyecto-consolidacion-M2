@@ -46,11 +46,11 @@ footer{
     padding: 20px;
 }
 
-#formu {
+#form {
     display:none;
     background-color: aliceblue;
     width: 100%;
-    position:fixed;
+    position:absolute;
     top: 10%;
     margin: 20px;
     border-radius: 5px;

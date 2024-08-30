@@ -49,11 +49,18 @@
     <main class="bg-primary">
         <section class="text-start text-white" id="sobremi">
             <h3>Sobre mí</h3>
-            <p>Soy Marcos Arriagada, un desarrollador front-end junior con una pasión por crear interfaces de usuario
-                intuitivas y atractivas. Me encanta aprender nuevas tecnologías y aplicarlas a proyectos desafiantes. Mi
-                objetivo es contribuir a la creación de productos digitales que brinden una excelente experiencia al
-                usuario.
-
+            <p> Soy Marcos Arriagada, un desarrollador front-end junior con una gran curiosidad por el mundo de la
+                tecnología. Me apasiona crear interfaces de usuario que sean tanto funcionales como estéticamente
+                agradables. Soy muy proactivo y siempre estoy buscando oportunidades para mejorar mis habilidades.
+                Actualmente, estoy trabajando en un proyecto personal para desarrollar una aplicación web de
+                productividad. Me encanta mantenerme actualizado con las últimas tendencias en desarrollo web y asistir
+                a conferencias y meetups para aprender de otros desarrolladores.
+                <br>
+                <br>
+                Me siento cómodo trabajando con herramientas como Git y npm, y tengo un buen entendimiento de los
+                principios de accesibilidad web. Mi stack tecnológico incluye HTML, CSS y JavaScript, y estoy
+                constantemente explorando nuevos frameworks como React para ampliar mis habilidades. Soy un autodidacta
+                nato y disfruto aprendiendo nuevas tecnologías y técnicas de desarrollo.
             </p>
         </section>
         <section class="text-start text-white" id="habilidades">
@@ -124,7 +131,7 @@
                     <button type="button" class="btn-close" aria-label="Close"></button>
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <img src="Assets/img/webaerovia.png" class="img-fluid rounded-start" alt="aerovia">
+                            <img src="Assets/img/webaerovia.jpg" class="img-fluid rounded-start" alt="aerovia">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -190,45 +197,38 @@
             </div>
         </section>
 
-        <div id="formu">
-            <form method="get" action="#" class="col needs-validation" novalidate>
+        <div id="form" class="container">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <form method="get" action="#" class="col">
                 <p>Estoy buscando oportunidades para unirme a un equipo dinámico y contribuir a proyectos emocionantes.
                     <br> ¡No
-                    dudes en contactarme para discutir cómo puedo agregar valor a tu equipo!</p>
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                    <label for="validationCustom03" class="form-label">Telefono</label>
-                    <input type="number" class="form-control" id="validationCustom03" required>
-                    <div class="invalid-feedback">
-                        Ingrese un numero valido.
-                    </div>
-                    <label for="validationCustomUsername" class="form-label">email</label>
-                    <div class="input-group has-validation">
-                        <input type="email" class="form-control" id="validationCustomUsername"
-                            aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Please choose a username.
-                        </div>
-                    </div>
+                    dudes en contactarme para discutir cómo puedo agregar valor a tu equipo!
+                </p>
+                <div class="datos">
+
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                    <label for="number" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" name="number" id="number" placeholder="+56" required>
+
+                    <label for="email" class="form-label">email</label>
+                    <input type="email" class="form-control" name="email" id="email"
+                        pattern="^[^@]+@[^@]+\.[a-zA-z]{2,}$" placeholder="ejemplo@ejemplo.cl" required>
+
                 </div>
 
-                <div class="mb-3 col-md-5">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                <div class="datos">
+                    <label for="comentario" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentario" name="comentario" rows="7"
+                        placeholder="Escribenos tus comentarios :)" required></textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
+                        <input class="form-check-input" type="checkbox" value="" id="Check" required>
+                        <label class="form-check-label" for="check">
                             Acepto los terminos y condiciones
                         </label>
-                        <div class="invalid-feedback">
-                            Debe aceptar antes de enviar.
-                        </div>
                     </div>
                 </div>
                 <div class="col-12">
@@ -236,10 +236,13 @@
                 </div>
             </form>
         </div>
+
         <footer>
-            <a href="https://github.com/sebarr90" target="_blank"><img class="icon" src="Assets/img/github.png" alt=""></a>
+            <a href="https://github.com/sebarr90" target="_blank"><img class="icon" src="Assets/img/github.png"
+                    alt=""></a>
             <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="Assets/img/ig.png" alt=""></a>
-            <a href="https://cl.linkedin.com/" target="_blank"><img class="icon" src="Assets/img/linkedin.png" alt=""></a>
+            <a href="https://cl.linkedin.com/" target="_blank"><img class="icon" src="Assets/img/linkedin.png"
+                    alt=""></a>
             <p>@MarcosArriagada 2024</p>
         </footer>
     </main>
